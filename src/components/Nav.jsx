@@ -16,7 +16,7 @@ const Nav = () => {
                             src={foobar}
                             alt={'foobar_transparent'}
                         />
-                        <h1>Foobar</h1>
+                        <h2>Foobar</h2>
                     </div>
                     <nav>
                         <HashLink smooth to="/#blog" className="menu-item">

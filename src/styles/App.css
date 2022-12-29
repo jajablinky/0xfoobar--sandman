@@ -11,25 +11,6 @@ body {
     background: #eff7f9;
 }
 
-.landing-page--container {
-    display: flex;
-    width: 80%;
-    height: 350px;
-    background: linear-gradient(
-        260.83deg,
-        #ebe8ff 6.86%,
-        rgba(225, 243, 248, 0.35) 67.81%,
-        rgba(214, 210, 232, 0.5625) 118.92%,
-        rgba(39, 29, 222, 0.22) 195.57%,
-        rgba(217, 217, 217, 0) 195.59%
-    );
-    border: 1px solid var(--primary-color);
-    margin: auto;
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
 .content--container {
     height: 100%;
     width: 80%;
@@ -110,7 +91,71 @@ body {
     color: white;
 }
 
-h1 {
+h2 {
     font-family: 'Share';
-    font-size: 16px;
+    font-size: 14px;
+}
+
+.landing-page--main-container {
+    display: flex;
+    width: 80%;
+    height: 350px;
+    background: linear-gradient(
+        260.83deg,
+        #ebe8ff 6.86%,
+        rgba(225, 243, 248, 0.35) 67.81%,
+        rgba(214, 210, 232, 0.5625) 118.92%,
+        rgba(39, 29, 222, 0.22) 195.57%,
+        rgba(217, 217, 217, 0) 195.59%
+    );
+    border: 1px solid var(--primary-color);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.landing-page--left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    font-size: 25px;
+    width: 450px;
+    height: 100%;
+    line-height: 1.3em;
+    gap: 10px;
+}
+
+.landing-page--left-save-your {
+    font-family: 'Trap';
+    font-style: 'Black';
+    margin-bottom: 0px;
+}
+
+.landing-page--left-smart-contracts {
+    font-family: 'Trap';
+    font-style: 'Black';
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.landing-page--left-secondary {
+    font-family: 'Spline-Sans-Mono';
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.landing-page--left-secondary {
+    font-family: 'Spline-Sans-Mono';
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.landing-page--lets-talk-button {
+    font-family: 'Roboto';
+    background-color: var(--primary-color);
+    border: 0;
+    margin-top: 60px;
+    width: 100px;
+    height: 30px;
+    padding-bottom: 3px;
+    font-size: 14px;
+    color: white;
 }
