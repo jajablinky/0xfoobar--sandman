@@ -4,6 +4,8 @@ import { Router } from 'react-router-dom'
 import './styles/index.css'
 import './styles/App.css'
 import Nav from './components/Nav'
+import contractStacks from './images/Contract-Stacks.png'
+import topologyPattern from './images/Topology-2.png'
 
 function App() {
     return (
@@ -27,7 +29,11 @@ function App() {
                                 Lets Talk
                             </button>
                         </div>
+                        <div className="landing-page--right">
+                            <img src={contractStacks} alt="contract-stacks" />
+                        </div>
                     </section>
+                    <div className="trusted-by--wrapper"></div>
                 </main>
             </div>
             {/* <main>

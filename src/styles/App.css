@@ -13,7 +13,7 @@ body {
 
 .content--container {
     height: 100%;
-    width: 80%;
+    width: 90%;
     max-width: 1300px;
     margin-inline: auto;
 }
@@ -85,8 +85,8 @@ body {
     border: 0;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 14px;
     color: white;
 }
@@ -98,7 +98,7 @@ h2 {
 
 .landing-page--main-container {
     display: flex;
-    width: 80%;
+    width: 90%;
     height: 350px;
     background: linear-gradient(
         260.83deg,
@@ -111,17 +111,18 @@ h2 {
     border: 1px solid var(--primary-color);
     margin: auto;
     margin-top: 50px;
+    justify-content: space-between;
 }
 
 .landing-page--left {
     display: flex;
     flex-direction: column;
     padding-left: 50px;
-    font-size: 25px;
-    width: 450px;
+    width: 500px;
     height: 100%;
     line-height: 1.3em;
-    gap: 10px;
+    font-size: 32px;
+    gap: 6px;
 }
 
 .landing-page--left-save-your {
@@ -158,4 +159,26 @@ h2 {
     padding-bottom: 3px;
     font-size: 14px;
     color: white;
+}
+
+.landing-page--right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 80px;
+    overflow: hidden;
+}
+
+.landing-page--right img {
+    margin-top: 32px;
+}
+
+.trusted-by--wrapper {
+    position: relative;
+    margin-left: 230px;
+    margin-right: 0px;
+    bottom: 40px;
+    max-width: 80%;
+    height: 300px;
+    background-color: var(--primary-color);
 }
