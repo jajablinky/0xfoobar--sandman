@@ -22,11 +22,11 @@ function App() {
                         <p>{`- - - - - - - ->`}</p>
                     </div>
                     <InfoPage />
-                    <div className="ticker-2">
-                        <p>{`~ ~ ~ ~ ~ ~ ~ ~`}</p>
-                    </div>
                     <div className="ticker">
-                        <p>{`~ ~ ~ ~ ~ ~ ~ ~`}</p>
+                        <p>{`<- - - - - - - -`}</p>
+                    </div>
+                    <div className="ticker-2">
+                        <p>{`- - - - - - - ->`}</p>
                     </div>
                 </main>
             </div>

@@ -1,4 +1,7 @@
-import blockchain from '../images/icons8-blockchain-64.png'
+import blockchain from '../images/shield-check.png'
+import magnify from '../images/Contract-Magnify.png'
+import dataChain from '../images/data-line.png'
+import chain from '../images/Chain.png'
 
 const InfoPage = () => {
     return (
@@ -36,12 +39,26 @@ const InfoPage = () => {
                         </p>
                     </div>
                 </div>
-                <div className="info-box--container-secondlayer">
-                    <div className="info-box--1-secondlayer"></div>
-                    <div className="info-box--2-secondlayer"></div>
-                    <div className="info-box--3-secondlayer"></div>
-                </div>
+                <button className="info-page--help-button">
+                    Ready For Help
+                </button>
                 <div className="blockchain--img-container">
+                    <img
+                        className="magnify--img"
+                        src={magnify}
+                        alt="contract-magnify"
+                    />
+                    <img
+                        className="data-chain--img"
+                        src={dataChain}
+                        alt="data-chain"
+                    />
+                    <img className="chain--img" src={chain} alt="chain" />
+                    <img
+                        className="data-chain--img"
+                        src={dataChain}
+                        alt="data-chain"
+                    />
                     <img
                         className="blockchain--img"
                         src={blockchain}

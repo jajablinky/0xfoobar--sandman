@@ -279,6 +279,8 @@ h2 {
     width: 90%;
     margin: auto;
     text-align: center;
+    gap: 30px;
+    align-items: center;
 }
 
 .help-engineers--header > h4 {
@@ -351,10 +353,23 @@ h2 {
 }
 
 .blockchain--img-container {
+    display: flex;
+    flex-direction: row;
     max-width: 100%;
-    object-fit: contain;
+    height: 200px;
 }
 
-.blockchain--img img {
-    width: 1000px;
+.blockchain--img {
+    width: 200px;
+}
+
+.info-page--help-button {
+    font-family: 'Roboto';
+    background-color: var(--secondary-color);
+    border: 0;
+    margin-bottom: 40px;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    color: white;
 }
