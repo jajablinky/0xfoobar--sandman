@@ -26,6 +26,36 @@ body {
     font-size: large;
 }
 
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes scroll {
     0% {
         transform: translate(0, 0);
@@ -309,34 +339,7 @@ h2 {
     gap: 20px;
     height: 200px;
     background-color: white;
-}
-
-.info-box--container-secondlayer {
-    display: flex;
-    flex-direction: row;
-}
-
-.info-box--container-secondlayer > div {
-    width: 33.33%;
-    gap: 20px;
-    height: 200px;
-    margin: 30px;
-    background-color: white;
-}
-
-.info-box--1-secondlayer,
-.info-box--2-secondlayer,
-.info-box--3-secondlayer {
-    background: linear-gradient(
-        260.83deg,
-        #ebe8ff 6.86%,
-        rgba(225, 243, 248, 0.35) 67.81%,
-        rgba(214, 210, 232, 0.5625) 118.92%,
-        rgba(39, 29, 222, 0.22) 195.57%,
-        rgba(217, 217, 217, 0) 195.59%
-    );
-    border: 1px solid var(--primary-color);
-    z-index: -10;
+    box-shadow: 7px 10px var(--secondary-color);
 }
 
 .info-box--header {
@@ -356,11 +359,12 @@ h2 {
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    height: 100px;
+    height: 150px;
 }
 
 .blockchain--img {
-    width: 200px;
+    width: 150px;
+    animation: bounce 3s linear infinite;
 }
 
 .info-page--help-button {
@@ -380,5 +384,12 @@ h2 {
 }
 
 .chain--container {
+    animation: spin 20s infinite linear;
     margin: auto;
+}
+
+.magnify--img-container {
+    animation: bounce 2s infinite linear;
+    animation-delay: 100ms;
+    margin-left: 20px;
 }

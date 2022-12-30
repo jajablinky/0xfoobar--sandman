@@ -43,11 +43,13 @@ const InfoPage = () => {
                     Ready For Help
                 </button>
                 <div className="blockchain--img-container">
-                    <img
-                        className="magnify--img"
-                        src={magnify}
-                        alt="contract-magnify"
-                    />
+                    <div className="magnify--img-container">
+                        <img
+                            className="magnify--img"
+                            src={magnify}
+                            alt="contract-magnify"
+                        />
+                    </div>
                     <div className="data-chain--container">
                         <img
                             className="data-chain--img"
