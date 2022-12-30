@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { Router } from 'react-router-dom'
 
-/* Styles and components import*/
+/* Styles and components import */
 import './styles/index.css'
 import './styles/App.css'
 import Nav from './components/Nav'
 
-/*Image Import*/
+/* Image Import */
 import contractStacks from './images/Contract-Stacks.png'
 import alchemix from './images/client-logos/Alchemix.png'
 import alpacadabraz from './images/client-logos/alpacadabraz.png'
@@ -18,6 +18,7 @@ import pixelLab from './images/client-logos/Pixellab.png'
 import substack from './images/client-logos/Substack.png'
 import sushiSwap from './images/client-logos/sushiSwap.png'
 import tallyLogo from './images/client-logos/TallyLogo 1.png'
+import lock from './images/icons8-lock-96.png'
 
 function App() {
     return (
@@ -46,21 +47,33 @@ function App() {
                         </div>
                     </section>
                     <div className="trusted-by--wrapper">
-                        <div className="trusted-by--header">
-                            <h3>Trusted By:</h3>
+                        <div className="trusted-by--wrapper-secondlayer"></div>
+                        <div className="trusted-by--container">
+                            <div className="trusted-by--header">
+                                <h3>Trusted By:</h3>
+                            </div>
+                            <div className="trusted-by--logo-grid">
+                                <img src={alchemix} alt="contract-stacks" />
+                                <img src={alpacadabraz} alt="contract-stacks" />
+                                <img src={delegateCash} alt="contract-stacks" />
+                                <img src={sushiSwap} alt="contract-stacks" />
+                                <img src={fooFighters} alt="contract-stacks" />
+                                <img
+                                    src={oSnipeGenesis}
+                                    alt="contract-stacks"
+                                />
+                                <img src={substack} alt="contract-stacks" />
+                                <img src={tallyLogo} alt="contract-stacks" />
+                                <img src={partyBid} alt="contract-stacks" />
+                                <img src={pixelLab} alt="contract-stacks" />
+                            </div>
                         </div>
-                        <div className="trusted-by--logo-grid">
-                            <img src={alchemix} alt="contract-stacks" />
-                            <img src={alpacadabraz} alt="contract-stacks" />
-                            <img src={delegateCash} alt="contract-stacks" />
-                            <img src={sushiSwap} alt="contract-stacks" />
-                            <img src={fooFighters} alt="contract-stacks" />
-                            <img src={oSnipeGenesis} alt="contract-stacks" />
-                            <img src={substack} alt="contract-stacks" />
-                            <img src={tallyLogo} alt="contract-stacks" />
-                            <img src={partyBid} alt="contract-stacks" />
-                            <img src={pixelLab} alt="contract-stacks" />
-                        </div>
+                    </div>
+                    <div className="ticker">
+                        <p>- - - - - - - -</p>
+                    </div>
+                    <div className="ticker-2">
+                        <p>- - - - - - - -</p>
                     </div>
                 </main>
             </div>

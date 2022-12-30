@@ -1,53 +1,54 @@
 @font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Medium.ttf) format("truetype");
-  font-weight: 500;
-  font-style: normal;
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Share";
-  src: url(../fonts/Share-Bold.ttf) format("truetype"),
-    url(../fonts/Share-Regular.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal;
+    font-family: 'Share';
+    src: url(../fonts/Share-Bold.ttf) format('truetype'),
+        url(../fonts/Share-Regular.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Trap";
-  src: url(../fonts/Trap-Black.otf) format("opentype"),
-    url(../fonts/Trap-Bold.otf) format("opentype"),
-    url(../fonts/Trap-ExtraBold.otf) format("opentype"),
-    url(../fonts/Trap-Light.otf) format("opentype"),
-    url(../fonts/Trap-Medium.otf) format("opentype"),
-    url(../fonts/Trap-Regular.otf) format("opentype"),
-    url(../fonts/Trap-SemiBold.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Trap';
+    src: url(../fonts/Trap-Black.otf) format('opentype'),
+        url(../fonts/Trap-Bold.otf) format('opentype'),
+        url(../fonts/Trap-ExtraBold.otf) format('opentype'),
+        url(../fonts/Trap-Light.otf) format('opentype'),
+        url(../fonts/Trap-Medium.otf) format('opentype'),
+        url(../fonts/Trap-Regular.otf) format('opentype'),
+        url(../fonts/Trap-SemiBold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-  font-family: "Spline-Sans-Mono";
-  src: url(../fonts/SplineSansMono-VariableFont_wght.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Spline-Sans-Mono';
+    src: url(../fonts/SplineSansMono-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
-  padding: 0;
-  box-sizing: border-box;
-  tab-size: 4;
-  --primary-color: #6158ff;
+    padding: 0;
+    box-sizing: border-box;
+    tab-size: 4;
+    --primary-color: #6158ff;
+    --secondary-color: #4abdfd;
 }
 
 :root {
-  font-family: "Roboto", "Share", "Spline-Sans-Mono", "Trap", Arial, Helvetica,
-    sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-family: 'Roboto', 'Share', 'Spline-Sans-Mono', 'Trap', Arial, Helvetica,
+        sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
