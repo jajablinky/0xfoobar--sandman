@@ -48,17 +48,23 @@ const InfoPage = () => {
                         src={magnify}
                         alt="contract-magnify"
                     />
-                    <img
-                        className="data-chain--img"
-                        src={dataChain}
-                        alt="data-chain"
-                    />
-                    <img className="chain--img" src={chain} alt="chain" />
-                    <img
-                        className="data-chain--img"
-                        src={dataChain}
-                        alt="data-chain"
-                    />
+                    <div className="data-chain--container">
+                        <img
+                            className="data-chain--img"
+                            src={dataChain}
+                            alt="data-chain"
+                        />
+                    </div>
+                    <div className="chain--container">
+                        <img className="chain--img" src={chain} alt="chain" />
+                    </div>
+                    <div className="data-chain--container">
+                        <img
+                            className="data-chain--img"
+                            src={dataChain}
+                            alt="data-chain"
+                        />
+                    </div>
                     <img
                         className="blockchain--img"
                         src={blockchain}

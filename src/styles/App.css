@@ -356,7 +356,7 @@ h2 {
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    height: 200px;
+    height: 100px;
 }
 
 .blockchain--img {
@@ -365,11 +365,20 @@ h2 {
 
 .info-page--help-button {
     font-family: 'Roboto';
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    justify-content: space-between;
     border: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 150px;
     height: 40px;
     font-size: 14px;
     color: white;
+}
+
+.data-chain--container {
+    margin: auto;
+}
+
+.chain--container {
+    margin: auto;
 }
