@@ -275,6 +275,7 @@ h2 {
 
 .info-page--main-container {
     display: flex;
+    flex-direction: column;
     width: 90%;
     margin: auto;
     text-align: center;
@@ -296,7 +297,9 @@ h2 {
     flex-direction: row;
 }
 
-.info-box--container > div {
+.info-box--1,
+.info-box--2,
+.info-box--3 {
     border: 1px solid var(--primary-color);
     width: 33.33%;
     height: auto;
@@ -306,45 +309,22 @@ h2 {
     background-color: white;
 }
 
-.info-box--1-secondlayer {
-    position: relative;
-    background: linear-gradient(
-        260.83deg,
-        #ebe8ff 6.86%,
-        rgba(225, 243, 248, 0.35) 67.81%,
-        rgba(214, 210, 232, 0.5625) 118.92%,
-        rgba(39, 29, 222, 0.22) 195.57%,
-        rgba(217, 217, 217, 0) 195.59%
-    );
-    width: 30%;
-    height: 200px;
-    bottom: 220px;
-    margin-bottom: 200px;
-    margin-left: 12px;
-    border: 1px solid var(--primary-color);
-    z-index: -10;
+.info-box--container-secondlayer {
+    display: flex;
+    flex-direction: row;
 }
 
-.info-box--2-secondlayer {
-    position: relative;
-    background: linear-gradient(
-        260.83deg,
-        #ebe8ff 6.86%,
-        rgba(225, 243, 248, 0.35) 67.81%,
-        rgba(214, 210, 232, 0.5625) 118.92%,
-        rgba(39, 29, 222, 0.22) 195.57%,
-        rgba(217, 217, 217, 0) 195.59%
-    );
-    width: 30%;
+.info-box--container-secondlayer > div {
+    width: 33.33%;
+    gap: 20px;
     height: 200px;
-    bottom: 220px;
-    margin-left: 12px;
-    border: 1px solid var(--primary-color);
-    z-index: -10;
+    margin: 30px;
+    background-color: white;
 }
 
+.info-box--1-secondlayer,
+.info-box--2-secondlayer,
 .info-box--3-secondlayer {
-    position: relative;
     background: linear-gradient(
         260.83deg,
         #ebe8ff 6.86%,
@@ -353,10 +333,6 @@ h2 {
         rgba(39, 29, 222, 0.22) 195.57%,
         rgba(217, 217, 217, 0) 195.59%
     );
-    width: 30%;
-    height: 200px;
-    bottom: 220px;
-    margin-left: 12px;
     border: 1px solid var(--primary-color);
     z-index: -10;
 }
@@ -372,4 +348,13 @@ h2 {
     font-family: 'Spline-Sans-Mono';
     font-size: 13px;
     margin-inline: 20px;
+}
+
+.blockchain--img-container {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.blockchain--img img {
+    width: 1000px;
 }
