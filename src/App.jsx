@@ -7,6 +7,7 @@ import './styles/App.css'
 import Nav from './components/Nav'
 import LandingPage from './components/LandingPage'
 import InfoPage from './components/InfoPage'
+import Audits from './components/Audits'
 
 function App() {
     return (
@@ -23,11 +24,12 @@ function App() {
                     </div>
                     <InfoPage />
                     <div className="ticker">
-                        <p>{`<- - - - - - - -`}</p>
+                        <p>{`. . . . . . . .`}</p>
                     </div>
                     <div className="ticker-2">
-                        <p>{`- - - - - - - ->`}</p>
+                        <p>{`. . . . . . . .`}</p>
                     </div>
+                    <Audits />
                 </main>
             </div>
         </div>

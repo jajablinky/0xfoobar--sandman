@@ -14,6 +14,7 @@ const InfoPage = () => {
                         will thank you!
                     </p>
                 </div>
+
                 <div className="info-box--container">
                     <div className="info-box--1">
                         <h5 className="info-box--header">Coding Mistakes</h5>
@@ -32,16 +33,13 @@ const InfoPage = () => {
                         </p>
                     </div>
                     <div className="info-box--3">
-                        <h5 className="info-box--header">Cost?</h5>
+                        <h5 className="info-box--header">Money Flaws</h5>
                         <p className="info-box--p">
                             Expose un-safe flaws, including price manipulation,
                             flash loan hazards, MEV, front-running, and more.
                         </p>
                     </div>
                 </div>
-                <button className="info-page--help-button">
-                    Ready For Help
-                </button>
                 <div className="blockchain--img-container">
                     <div className="magnify--img-container">
                         <img
@@ -94,13 +92,16 @@ const InfoPage = () => {
                         </p>
                     </div>
                     <div className="info-box--6">
-                        <h5 className="info-box--header">Report?</h5>
+                        <h5 className="info-box--header">Cost?</h5>
                         <p className="info-box--p">
                             Can vary greatly based upon the length and
                             complexity of the smart contracts to be audited.
                         </p>
                     </div>
                 </div>
+                <button className="info-page--get-quote-button">
+                    Get A Quote
+                </button>
             </section>
         </>
     )

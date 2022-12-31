@@ -25,6 +25,16 @@ body {
     font-size: large;
 }
 
+.ticker-3 {
+    text-align: center;
+    animation: opacity 1s linear infinite;
+    color: black;
+}
+
+.ticker-3 > p {
+    margin: 0;
+}
+
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -141,21 +151,21 @@ body {
 .menu-item {
     font-family: 'Share';
     color: var(--primary-color);
-    padding: 10px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 18px;
 }
 
 .contact--button {
     font-family: 'Roboto';
     margin-right: 8px;
-    margin-left: 10px;
+    margin-left: 20px;
     background-color: var(--primary-color);
     border: 0;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
     color: white;
 }
 
@@ -186,7 +196,7 @@ h2 {
     display: flex;
     flex-direction: column;
     padding-left: 50px;
-    width: 500px;
+    width: 600px;
     height: 100%;
     line-height: 1.3em;
     font-size: 32px;
@@ -207,13 +217,7 @@ h2 {
 }
 .landing-page--left-secondary {
     font-family: 'Spline-Sans-Mono';
-    font-size: 12px;
-    line-height: 18px;
-}
-
-.landing-page--left-secondary {
-    font-family: 'Spline-Sans-Mono';
-    font-size: 12px;
+    font-size: 16px;
     line-height: 18px;
 }
 
@@ -222,10 +226,10 @@ h2 {
     background-color: var(--primary-color);
     border: 0;
     margin-top: 30px;
-    width: 150px;
-    height: 30px;
+    width: 176px;
+    height: 50px;
     padding-bottom: 3px;
-    font-size: 14px;
+    font-size: 18px;
     color: white;
 }
 
@@ -247,6 +251,7 @@ h2 {
     flex-direction: column;
     margin-left: 230px;
     margin-right: 0px;
+    margin-bottom: 30px;
     bottom: 40px;
     max-width: 80%;
     height: 300px;
@@ -310,13 +315,12 @@ h2 {
     text-align: center;
     gap: 30px;
     align-items: center;
-    margin-top: 50px;
 }
 
 .help-engineers--header > h4 {
     font-family: 'Trap';
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-size: 38px;
+    margin-bottom: 25px;
 }
 
 .help-engineers--header > p {
@@ -357,7 +361,7 @@ h2 {
     gap: 20px;
     height: 200px;
     background-color: white;
-    box-shadow: 7px 10px #ebe8ff;
+    box-shadow: 7px 10px #a698ff;
 }
 
 .info-box--header {
@@ -378,6 +382,7 @@ h2 {
     flex-direction: row;
     margin: auto;
     height: 150px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -399,6 +404,19 @@ h2 {
     color: white;
 }
 
+.info-page--get-quote-button {
+    font-family: 'Roboto';
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    border: 0;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+}
+
 .data-chain--container {
     margin: auto;
     object-fit: contain;
@@ -413,4 +431,144 @@ h2 {
     animation: bounce 2s infinite linear;
     animation-delay: 100ms;
     max-width: 80%;
+}
+
+/* ---- PAGE 3  ---- */
+
+.audits-page--full-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+}
+
+.audits-page--main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    gap: 50px;
+}
+.audits--header {
+    align-items: left;
+    height: 350px;
+    margin: auto;
+}
+
+.audits--header-content {
+    align-items: left;
+    margin: 20px;
+}
+
+.audits--header-content > h4 {
+    margin-top: 0;
+    font-family: 'Trap';
+    font-size: 45px;
+    margin-bottom: 16px;
+}
+
+.audits--header-content > p {
+    font-family: 'Roboto';
+    margin: 0;
+    font-size: 18px;
+}
+
+.audits-page--container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 250px;
+    background: linear-gradient(
+        180deg,
+        rgba(235, 232, 255, 0.3) 4.45%,
+        rgba(214, 210, 232, 0.16875) 28.13%,
+        rgba(239, 247, 249, 0.3) 99.98%,
+        rgba(39, 29, 222, 0.066) 99.99%,
+        rgba(217, 217, 217, 0) 100%
+    );
+    border: 0.6px solid;
+    border-image: linear-gradient(
+            180deg,
+            var(--primary-color),
+            rgba(0, 0, 0, 0)
+        )
+        4 10%;
+    margin: 0;
+    box-shadow: -7px -10px 10px #8585851f;
+}
+
+.audits--list {
+    font-family: 'Spline-Sans-Mono';
+    margin: auto;
+    margin-top: 25px;
+    width: 80%;
+}
+
+.audits--list > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.6px dashed #a698ff;
+}
+
+.audits--pdf-year {
+    display: flex;
+    flex-direction: row;
+}
+
+.audits--load-more-button {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.audits--load-more-button button {
+    font-family: 'Roboto';
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, #fce6ff 100%);
+    border: 0;
+    width: 90px;
+    height: 34px;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.start-defending--container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    background-color: var(--primary-color);
+    width: 60%;
+    color: white;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.start-defending--content {
+    margin: auto;
+}
+
+.start-defending--container h6 {
+    font-family: 'Spline-Sans-Mono';
+    font-size: 35px;
+    margin: 0;
+}
+
+.start-defending--container p {
+    margin: 0;
+    width: 500px;
+    margin: 30px;
+}
+
+.start-defending--container button {
+    font-family: 'Roboto';
+    background-color: var(--secondary-color);
+    border: 0;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+}
+
+.secondary-color {
+    color: var(--secondary-color);
 }
