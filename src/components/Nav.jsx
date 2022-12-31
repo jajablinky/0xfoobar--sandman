@@ -7,7 +7,6 @@ import foobar from '../images/foobar.png'
 const Nav = () => {
     return (
         <header className="header--container">
-            <div className="header--container--layer2"></div>
             <div className="header--sub-container">
                 <div className="header--content-container">
                     <div className="header--content-left">

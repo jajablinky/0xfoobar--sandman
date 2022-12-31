@@ -1,4 +1,8 @@
 import AuditItem from './AuditItem'
+import blockchain from '../images/shield-check.png'
+import magnify from '../images/Contract-Magnify.png'
+import dataChain from '../images/data-line.png'
+import chain from '../images/Chain.png'
 
 const Audits = () => {
     const auditData = [
@@ -35,26 +39,38 @@ const Audits = () => {
                         </div>
                     </div>
                 </div>
-                <div className="start-defending--container">
-                    <div className="start-defending--content">
-                        <div className="defending--header">
-                            <h6>Start Defending</h6>
-                        </div>
-                        <div className="defending--p-container">
-                            <p>
-                                It’s difficult to manage and fix problems in{' '}
-                                <span className="secondary-color">
-                                    decentralized systems
-                                </span>
-                                . Join others in securing your users today.
-                            </p>
-                        </div>
-                        <div className="secure-contracts--button-container">
-                            <button>Secure Contracts</button>
-                        </div>
-                    </div>
-                </div>
             </section>
+            <div className="blockchain--img-container">
+                <div className="magnify--img-container">
+                    <img
+                        className="magnify--img"
+                        src={magnify}
+                        alt="contract-magnify"
+                    />
+                </div>
+                <div className="data-chain--container">
+                    <img
+                        className="data-chain--img"
+                        src={dataChain}
+                        alt="data-chain"
+                    />
+                </div>
+                <div className="chain--container">
+                    <img className="chain--img" src={chain} alt="chain" />
+                </div>
+                <div className="data-chain--container">
+                    <img
+                        className="data-chain--img"
+                        src={dataChain}
+                        alt="data-chain"
+                    />
+                </div>
+                <img
+                    className="blockchain--img"
+                    src={blockchain}
+                    alt="blockchain"
+                />
+            </div>
         </>
     )
 }

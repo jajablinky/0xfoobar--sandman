@@ -19,7 +19,7 @@ const LandingPage = () => {
                 <div className="landing-page--left">
                     <h1 className="landing-page--left-save-your">Save Your</h1>
                     <h1 className="landing-page--left-smart-contracts">
-                        Smart Contracts
+                        Smart contracts
                     </h1>
                     <span className="landing-page--left-secondary">
                         EVM smart contract audits on NFT and Defi. Saving you

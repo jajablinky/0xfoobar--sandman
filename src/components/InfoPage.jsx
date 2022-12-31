@@ -1,12 +1,7 @@
-import blockchain from '../images/shield-check.png'
-import magnify from '../images/Contract-Magnify.png'
-import dataChain from '../images/data-line.png'
-import chain from '../images/Chain.png'
-
 const InfoPage = () => {
     return (
         <>
-            <section class="info-page--main-container" id="blog">
+            <section class="info-page--main-container" id="faq">
                 <div className="help-engineers--header">
                     <h4>Help Your Engineers</h4>
                     <p className="info-box--p">
@@ -40,44 +35,11 @@ const InfoPage = () => {
                         </p>
                     </div>
                 </div>
+
                 <button className="info-page--get-quote-button">
                     Get A Quote
                 </button>
-                <div className="blockchain--img-container">
-                    <div className="magnify--img-container">
-                        <img
-                            className="magnify--img"
-                            src={magnify}
-                            alt="contract-magnify"
-                        />
-                    </div>
-                    <div className="data-chain--container">
-                        <img
-                            className="data-chain--img"
-                            src={dataChain}
-                            alt="data-chain"
-                        />
-                    </div>
-                    <div className="chain--container">
-                        <img className="chain--img" src={chain} alt="chain" />
-                    </div>
-                    <div className="data-chain--container">
-                        <img
-                            className="data-chain--img"
-                            src={dataChain}
-                            alt="data-chain"
-                        />
-                    </div>
-                    <img
-                        className="blockchain--img"
-                        src={blockchain}
-                        alt="blockchain"
-                    />
-                </div>
-                <div className="help-engineers--header">
-                    <h4>FAQ</h4>
-                </div>
-                <div className="info-box--container-2">
+                {/* <div className="info-box--container-2">
                     <div className="info-box--4">
                         <h5 className="info-box--header">Tools?</h5>
                         <p className="info-box--p">
@@ -99,9 +61,9 @@ const InfoPage = () => {
                         <p className="info-box--p">
                             Can vary greatly based upon the length and
                             complexity of the smart contracts to be audited.
-                        </p>
+                        </p> 
                     </div>
-                </div>
+                </div>*/}
             </section>
         </>
     )
