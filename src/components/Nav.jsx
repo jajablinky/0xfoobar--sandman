@@ -19,8 +19,8 @@ const Nav = () => {
                         <h2>Foobar</h2>
                     </div>
                     <nav>
-                        <HashLink smooth to="/#blog" className="menu-item">
-                            Blog
+                        <HashLink smooth to="/#faq" className="menu-item">
+                            Faq
                         </HashLink>
                         <HashLink smooth to="/#audits" className="menu-item">
                             Audits

@@ -98,7 +98,7 @@ body {
 
 .header--container {
     position: relative;
-    margin-top: 20px;
+    margin-top: 0;
     height: 50px;
     background: white;
     border: 1px solid var(--primary-color);
@@ -516,6 +516,15 @@ h2 {
     flex-direction: row;
 }
 
+.audits--pdf {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.audits--pdf-img {
+    margin-top: 10px;
+}
+
 .audits--load-more-button {
     margin: auto;
     margin-top: 20px;
@@ -537,10 +546,11 @@ h2 {
     margin: auto;
     text-align: center;
     background-color: var(--primary-color);
-    width: 60%;
+    width: 70%;
     color: white;
     height: 300px;
-    margin-top: 30px;
+    margin-top: 300px;
+    margin-bottom: 300px;
 }
 
 .start-defending--content {
@@ -551,6 +561,7 @@ h2 {
     font-family: 'Spline-Sans-Mono';
     font-size: 35px;
     margin: 0;
+    margin-top: 10px;
 }
 
 .start-defending--container p {

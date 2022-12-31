@@ -6,7 +6,7 @@ import chain from '../images/Chain.png'
 const InfoPage = () => {
     return (
         <>
-            <section class="info-page--main-container">
+            <section class="info-page--main-container" id="blog">
                 <div className="help-engineers--header">
                     <h4>Help Your Engineers</h4>
                     <p className="info-box--p">
@@ -40,6 +40,9 @@ const InfoPage = () => {
                         </p>
                     </div>
                 </div>
+                <button className="info-page--get-quote-button">
+                    Get A Quote
+                </button>
                 <div className="blockchain--img-container">
                     <div className="magnify--img-container">
                         <img
@@ -99,9 +102,6 @@ const InfoPage = () => {
                         </p>
                     </div>
                 </div>
-                <button className="info-page--get-quote-button">
-                    Get A Quote
-                </button>
             </section>
         </>
     )

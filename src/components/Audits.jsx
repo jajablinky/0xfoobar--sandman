@@ -1,8 +1,17 @@
+import AuditItem from './AuditItem'
+
 const Audits = () => {
+    const auditData = [
+        { name: 'Alchemix', year: '2022' },
+        { name: 'SushiSwap', year: '2022' },
+        { name: 'PartyBid', year: '2022' },
+        { name: 'Substack', year: '2022' },
+    ]
+
     return (
         <>
-            <section class="audits-page--full-container">
-                <div class="audits-page--main-container">
+            <section className="audits-page--full-container" id="audits">
+                <div className="audits-page--main-container">
                     <div className="audits--header">
                         <div className="audits--header-content">
                             <h4>Audits</h4>
@@ -14,34 +23,12 @@ const Audits = () => {
                     </div>
                     <div className="audits-page--container">
                         <div className="audits--list">
-                            <div className="audits--Alchemix">
-                                <p>Alchemix</p>
-                                <div className="audits--pdf-year">
-                                    <p>PDF</p>
-                                    <p>2022</p>
-                                </div>
-                            </div>
-                            <div className="audits--SushiSwap">
-                                <p>SushiSwap</p>
-                                <div className="audits--pdf-year">
-                                    <p>PDF</p>
-                                    <p>2022</p>
-                                </div>
-                            </div>
-                            <div className="audits--PartyBid">
-                                <p>PartyBid</p>
-                                <div className="audits--pdf-year">
-                                    <p>PDF</p>
-                                    <p>2022</p>
-                                </div>
-                            </div>
-                            <div className="audits--Substack">
-                                <p>Substack</p>
-                                <div className="audits--pdf-year">
-                                    <p>PDF</p>
-                                    <p>2022</p>
-                                </div>
-                            </div>
+                            {auditData.map((audit) => (
+                                <AuditItem
+                                    name={audit.name}
+                                    year={audit.year}
+                                />
+                            ))}
                         </div>
                         <div className="audits--load-more-button">
                             <button>Load More</button>
