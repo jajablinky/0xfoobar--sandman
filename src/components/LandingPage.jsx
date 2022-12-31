@@ -16,21 +16,25 @@ const LandingPage = () => {
     return (
         <>
             <section className="landing-page--main-container">
-                <div className="landing-page--left">
-                    <h1 className="landing-page--left-save-your">Save Your</h1>
-                    <h1 className="landing-page--left-smart-contracts">
-                        Smart contracts
-                    </h1>
-                    <span className="landing-page--left-secondary">
-                        EVM smart contract audits on NFT and Defi. Saving you
-                        millions of dollars.
-                    </span>
-                    <button className="landing-page--lets-talk-button">
-                        Lets Talk
-                    </button>
-                </div>
-                <div className="landing-page--right">
-                    <img src={contractStacks} alt="contract-stacks" />
+                <div className="landing-page--main-content">
+                    <div className="landing-page--left">
+                        <h1 className="landing-page--left-save-your">
+                            Save Your
+                        </h1>
+                        <h1 className="landing-page--left-smart-contracts">
+                            Smart contracts
+                        </h1>
+                        <span className="landing-page--left-secondary">
+                            EVM smart contract audits on NFT and Defi. Saving
+                            you millions of dollars.
+                        </span>
+                        <button className="landing-page--lets-talk-button">
+                            Lets Talk
+                        </button>
+                    </div>
+                    <div className="landing-page--right">
+                        <img src={contractStacks} alt="contract-stacks" />
+                    </div>
                 </div>
             </section>
             <div className="trusted-by--wrapper">

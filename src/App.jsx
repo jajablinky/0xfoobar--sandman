@@ -24,6 +24,12 @@ function App() {
                     </div>
                     <div className="ticker-2"></div>
                     <InfoPage />
+                    <div className="ticker">
+                        <p>{`<- - - - - - - -`}</p>
+                    </div>
+                    <div className="ticker-2">
+                        <p>{`- - - - - - - ->`}</p>
+                    </div>
                     <Audits />
                 </main>
             </div>

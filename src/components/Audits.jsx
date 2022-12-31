@@ -39,38 +39,38 @@ const Audits = () => {
                         </div>
                     </div>
                 </div>
+                <div className="blockchain--img-container">
+                    <div className="magnify--img-container">
+                        <img
+                            className="magnify--img"
+                            src={magnify}
+                            alt="contract-magnify"
+                        />
+                    </div>
+                    <div className="data-chain--container">
+                        <img
+                            className="data-chain--img"
+                            src={dataChain}
+                            alt="data-chain"
+                        />
+                    </div>
+                    <div className="chain--container">
+                        <img className="chain--img" src={chain} alt="chain" />
+                    </div>
+                    <div className="data-chain--container">
+                        <img
+                            className="data-chain--img"
+                            src={dataChain}
+                            alt="data-chain"
+                        />
+                    </div>
+                    <img
+                        className="blockchain--img"
+                        src={blockchain}
+                        alt="blockchain"
+                    />
+                </div>
             </section>
-            <div className="blockchain--img-container">
-                <div className="magnify--img-container">
-                    <img
-                        className="magnify--img"
-                        src={magnify}
-                        alt="contract-magnify"
-                    />
-                </div>
-                <div className="data-chain--container">
-                    <img
-                        className="data-chain--img"
-                        src={dataChain}
-                        alt="data-chain"
-                    />
-                </div>
-                <div className="chain--container">
-                    <img className="chain--img" src={chain} alt="chain" />
-                </div>
-                <div className="data-chain--container">
-                    <img
-                        className="data-chain--img"
-                        src={dataChain}
-                        alt="data-chain"
-                    />
-                </div>
-                <img
-                    className="blockchain--img"
-                    src={blockchain}
-                    alt="blockchain"
-                />
-            </div>
         </>
     )
 }

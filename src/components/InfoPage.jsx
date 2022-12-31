@@ -39,7 +39,7 @@ const InfoPage = () => {
                 <button className="info-page--get-quote-button">
                     Get A Quote
                 </button>
-                {/* <div className="info-box--container-2">
+                <div className="info-box--container-2">
                     <div className="info-box--4">
                         <h5 className="info-box--header">Tools?</h5>
                         <p className="info-box--p">
@@ -61,9 +61,9 @@ const InfoPage = () => {
                         <p className="info-box--p">
                             Can vary greatly based upon the length and
                             complexity of the smart contracts to be audited.
-                        </p> 
+                        </p>
                     </div>
-                </div>*/}
+                </div>
             </section>
         </>
     )
