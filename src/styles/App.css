@@ -14,14 +14,13 @@ body {
 /* ---- TICKER ---- */
 .ticker {
     text-align: right;
-    animation: scroll 7s linear infinite;
+    animation: scroll 7s linear infinite, opacity 1s linear infinite;
     color: var(--primary-color);
     font-size: large;
 }
-
 .ticker-2 {
     text-align: right;
-    animation: scroll2 7s linear infinite;
+    animation: scroll2 7s linear infinite, opacity 1s linear infinite;
     color: var(--secondary-color);
     font-size: large;
 }
@@ -58,7 +57,7 @@ body {
 
 @keyframes scroll {
     0% {
-        transform: translate(0, 0);
+        transform: translate(-10%, 0);
         color: var(--primary-color);
     }
     100% {
@@ -73,7 +72,7 @@ body {
         color: var(--secondary-color);
     }
     100% {
-        transform: translate(0, 0);
+        transform: translate(-10%, 0);
         color: var(--primary-color);
     }
 }
@@ -311,6 +310,7 @@ h2 {
     text-align: center;
     gap: 30px;
     align-items: center;
+    margin-top: 50px;
 }
 
 .help-engineers--header > h4 {
@@ -329,6 +329,11 @@ h2 {
     flex-direction: row;
 }
 
+.info-box--container-2 {
+    display: flex;
+    flex-direction: row;
+}
+
 .info-box--1,
 .info-box--2,
 .info-box--3 {
@@ -340,6 +345,19 @@ h2 {
     height: 200px;
     background-color: white;
     box-shadow: 7px 10px var(--secondary-color);
+}
+
+.info-box--4,
+.info-box--5,
+.info-box--6 {
+    border: 1px solid var(--primary-color);
+    width: 33.33%;
+    height: auto;
+    margin: 30px;
+    gap: 20px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 7px 10px #ebe8ff;
 }
 
 .info-box--header {
@@ -358,8 +376,9 @@ h2 {
 .blockchain--img-container {
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    margin: auto;
     height: 150px;
+    margin-bottom: 50px;
 }
 
 .blockchain--img {
@@ -372,15 +391,17 @@ h2 {
     background-color: var(--primary-color);
     justify-content: space-between;
     border: 0;
-    margin-bottom: 20px;
-    width: 150px;
-    height: 40px;
-    font-size: 14px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
     color: white;
 }
 
 .data-chain--container {
     margin: auto;
+    object-fit: contain;
 }
 
 .chain--container {
@@ -391,5 +412,5 @@ h2 {
 .magnify--img-container {
     animation: bounce 2s infinite linear;
     animation-delay: 100ms;
-    margin-left: 20px;
+    max-width: 80%;
 }
