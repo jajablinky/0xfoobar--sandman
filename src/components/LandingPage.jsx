@@ -22,7 +22,7 @@ const LandingPage = () => {
                             Save Your
                         </h1>
                         <h1 className="landing-page--left-smart-contracts">
-                            Smart contracts
+                            Smart Contracts
                         </h1>
                         <span className="landing-page--left-secondary">
                             EVM smart contract audits on NFT and Defi. Saving
@@ -37,24 +37,32 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
-            <div className="trusted-by--wrapper">
-                <div className="trusted-by--wrapper-secondlayer"></div>
-                <div className="trusted-by--container">
-                    <div className="trusted-by--header">
-                        <h3>Trusted By:</h3>
+            <div className="landing-page--secondary-container">
+                <div>
+                    <p>{`<-`}</p>
+                </div>
+                <div className="trusted-by--wrapper">
+                    <div className="trusted-by--wrapper-secondlayer"></div>
+                    <div className="trusted-by--container">
+                        <div className="trusted-by--header">
+                            <h3>Trusted By:</h3>
+                        </div>
+                        <div className="trusted-by--logo-grid">
+                            <img src={alchemix} alt="contract-stacks" />
+                            <img src={alpacadabraz} alt="contract-stacks" />
+                            <img src={delegateCash} alt="contract-stacks" />
+                            <img src={sushiSwap} alt="contract-stacks" />
+                            <img src={fooFighters} alt="contract-stacks" />
+                            <img src={oSnipeGenesis} alt="contract-stacks" />
+                            <img src={substack} alt="contract-stacks" />
+                            <img src={tallyLogo} alt="contract-stacks" />
+                            <img src={partyBid} alt="contract-stacks" />
+                            <img src={pixelLab} alt="contract-stacks" />
+                        </div>
                     </div>
-                    <div className="trusted-by--logo-grid">
-                        <img src={alchemix} alt="contract-stacks" />
-                        <img src={alpacadabraz} alt="contract-stacks" />
-                        <img src={delegateCash} alt="contract-stacks" />
-                        <img src={sushiSwap} alt="contract-stacks" />
-                        <img src={fooFighters} alt="contract-stacks" />
-                        <img src={oSnipeGenesis} alt="contract-stacks" />
-                        <img src={substack} alt="contract-stacks" />
-                        <img src={tallyLogo} alt="contract-stacks" />
-                        <img src={partyBid} alt="contract-stacks" />
-                        <img src={pixelLab} alt="contract-stacks" />
-                    </div>
+                </div>
+                <div>
+                    <p>{`->`}</p>
                 </div>
             </div>
         </>

@@ -1,15 +1,16 @@
 import AuditItem from './AuditItem'
-import blockchain from '../images/shield-check.png'
-import magnify from '../images/Contract-Magnify.png'
-import dataChain from '../images/data-line.png'
-import chain from '../images/Chain.png'
 
 const Audits = () => {
     const auditData = [
         { name: 'Alchemix', year: '2022' },
         { name: 'SushiSwap', year: '2022' },
-        { name: 'PartyBid', year: '2022' },
         { name: 'Substack', year: '2022' },
+        { name: 'Foo Fighters', year: '2022' },
+        { name: 'oSnipe Genesis', year: '2022' },
+        { name: 'Substack', year: '2022' },
+        { name: 'Tally Labs', year: '2022' },
+        { name: 'PARTYBID', year: '2022' },
+        { name: 'Pixel Lab', year: '2022' },
     ]
 
     return (
@@ -38,37 +39,6 @@ const Audits = () => {
                             <button>Load More</button>
                         </div>
                     </div>
-                </div>
-                <div className="blockchain--img-container">
-                    <div className="magnify--img-container">
-                        <img
-                            className="magnify--img"
-                            src={magnify}
-                            alt="contract-magnify"
-                        />
-                    </div>
-                    <div className="data-chain--container">
-                        <img
-                            className="data-chain--img"
-                            src={dataChain}
-                            alt="data-chain"
-                        />
-                    </div>
-                    <div className="chain--container">
-                        <img className="chain--img" src={chain} alt="chain" />
-                    </div>
-                    <div className="data-chain--container">
-                        <img
-                            className="data-chain--img"
-                            src={dataChain}
-                            alt="data-chain"
-                        />
-                    </div>
-                    <img
-                        className="blockchain--img"
-                        src={blockchain}
-                        alt="blockchain"
-                    />
                 </div>
             </section>
         </>

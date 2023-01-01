@@ -3,34 +3,45 @@ button {
     text-decoration: none;
 }
 
+a {
+    color: white;
+}
+
 body {
     background: #eff7f9;
     margin: 0;
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
 /* ---- TICKER ---- */
-.ticker {
-    text-align: right;
-    animation: scroll 7s linear infinite, opacity 1s linear infinite;
-    color: var(--primary-color);
-    font-size: large;
-}
-.ticker-2 {
-    text-align: right;
-    animation: scroll2 7s linear infinite, opacity 1s linear infinite;
-    color: var(--secondary-color);
-    font-size: large;
-}
-
-.ticker-3 {
+.ticker--container {
+    display: block;
     text-align: center;
-    animation: opacity 1s linear infinite;
-    color: black;
+    overflow: hidden;
+    height: 1px;
 }
 
-.ticker-3 > p {
-    margin: 0;
+.ticker {
+    width: 200%;
+    height: 1px;
+    background-image: url(../images/dash.svg);
+    background-position: 0 50%;
+    background-size: auto 1px;
+    background-repeat: repeat-x;
+    opacity: 50%;
+    transform: translate3d(0, 0, 0);
+    animation: scroll 2s linear infinite;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+@keyframes scroll {
+    100% {
+        transform: translate3d(20px, 0, 0);
+    }
 }
 
 @keyframes bounce {
@@ -38,7 +49,7 @@ body {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-2px);
+        transform: translateY(-5px);
     }
     100% {
         transform: translateY(0);
@@ -63,55 +74,33 @@ body {
     }
 }
 
-@keyframes scroll {
-    0% {
-        transform: translate(0%, 0);
-        color: var(--primary-color);
-    }
-    100% {
-        transform: translate(-100%, 0);
-        color: var(--secondary-color);
-    }
-}
-
-@keyframes scroll2 {
-    0% {
-        transform: translate(-100%, 0);
-        color: var(--secondary-color);
-    }
-    100% {
-        transform: translate(0%, 0);
-        color: var(--primary-color);
-    }
-}
-
 /* ---- PAGE 1 ---- */
 
 .content--container {
     height: 100%;
     width: 100%;
-    max-width: 1800px;
     margin-inline: auto;
+    overflow: hidden;
 }
 
 .header--container {
     display: flex;
     margin: auto;
-    height: 90px;
+    height: 60px;
     background: white;
     border-bottom: 1px solid var(--primary-color);
 }
 
 .header--sub-container {
     margin: auto;
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .header--content-container {
-    max-width: 1800px;
+    max-width: 1600px;
     margin: auto;
     justify-content: space-between;
     width: 100%;
@@ -130,25 +119,24 @@ body {
 .foobar {
     width: 50px;
     margin-top: -20px;
-    margin-left: -5px;
     height: fit-content;
 }
 
 .menu-item {
     font-family: 'Share';
     color: var(--primary-color);
-    padding: 15px;
+    padding: 20px;
     font-size: 20px;
 }
 
 .contact--button {
     font-family: 'Roboto';
     margin-right: 8px;
-    margin-left: 20px;
+    margin-left: 15px;
     background-color: var(--primary-color);
     border: 0;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 11px;
     padding-bottom: 11px;
     font-size: 18px;
@@ -161,8 +149,9 @@ h2 {
 }
 
 .landing-page--main-container {
+    max-width: 1600px;
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 500px;
     background: linear-gradient(
         260.83deg,
@@ -179,9 +168,9 @@ h2 {
 
 .landing-page--main-content {
     display: flex;
-    width: 90%;
+    width: 95%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 40px;
     justify-content: space-between;
 }
 
@@ -241,20 +230,19 @@ h2 {
 
 .trusted-by--wrapper {
     display: flex;
+    width: 50%;
     margin: auto;
-    width: 80%;
-    margin-right: 0rem;
     max-width: 100%;
     height: 350px;
     background-color: var(--primary-color);
     text-align: center;
-    margin-bottom: 150px;
-    box-shadow: 14px 14px black;
+    margin-bottom: 100px;
+    box-shadow: 0px 14px black;
 }
 
 .trusted-by--container {
     margin: auto;
-    width: 90%;
+    width: 80%;
     height: 75%;
 }
 
@@ -278,12 +266,19 @@ h2 {
     object-fit: contain;
 }
 
+.landing-page--secondary-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
 /* ---- PAGE 2  ---- */
 
 .info-page--main-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     margin: auto;
     text-align: center;
     gap: 30px;
@@ -294,7 +289,7 @@ h2 {
     font-family: 'Trap';
     font-size: 38px;
     margin-bottom: 25px;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .help-engineers--header > p {
@@ -383,8 +378,8 @@ h2 {
     background-color: var(--primary-color);
     justify-content: space-between;
     border: 0;
-    margin-bottom: 60px;
-    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-top: 30px;
     width: 200px;
     height: 50px;
     font-size: 18px;
@@ -413,45 +408,41 @@ h2 {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 100%;
+    width: 70%;
+    margin-bottom: 200px;
 }
 
 .audits-page--main-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 100px;
-    gap: 50px;
+    flex-direction: column;
+    margin-top: 50px;
 }
 .audits--header {
-    align-items: left;
-    height: 350px;
-    margin: auto;
+    text-align: left;
+    margin: 50px;
 }
 
 .audits--header-content {
-    align-items: left;
-    margin: 20px;
+    margin: 30px;
 }
 
 .audits--header-content > h4 {
     margin-top: 0;
     font-family: 'Trap';
     font-size: 45px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
 }
 
 .audits--header-content > p {
-    font-family: 'Roboto';
+    font-family: 'Spline-Sans-Mono';
     margin: 0;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .audits-page--container {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 250px;
+    width: 100%;
     background: linear-gradient(
         180deg,
         rgba(235, 232, 255, 0.3) 4.45%,
@@ -556,4 +547,26 @@ h2 {
 
 .secondary-color {
     color: var(--secondary-color);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+/* ----- FOOTER ===== */
+
+.footer--container {
+    display: flex;
+    font-family: 'Spline-Sans-Mono';
+    background: #0a142f;
+    height: 350px;
+    align-items: center;
+    color: white;
+}
+
+.footer--content-container {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    margin: auto;
 }

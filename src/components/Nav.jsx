@@ -6,7 +6,7 @@ import foobar from '../images/foobar.png'
 
 const Nav = () => {
     return (
-        <header className="header--container">
+        <header className="header--container" id="home">
             <div className="header--sub-container">
                 <div className="header--content-container">
                     <div className="header--content-left">
@@ -18,9 +18,6 @@ const Nav = () => {
                         <h2>Foobar</h2>
                     </div>
                     <nav>
-                        <HashLink smooth to="/#faq" className="menu-item">
-                            Faq
-                        </HashLink>
                         <HashLink smooth to="/#audits" className="menu-item">
                             Audits
                         </HashLink>
