@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage'
 import InfoPage from './components/InfoPage'
 import Audits from './components/Audits'
 import Footer from './components/Footer'
+import BlurBottom from './components/BlurBottom'
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                 </div>
                 <Audits />
             </main>
+            <BlurBottom />
             <Footer />
         </div>
     )

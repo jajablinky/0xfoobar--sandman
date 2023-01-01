@@ -74,31 +74,6 @@ const InfoPage = () => {
                 <button className="info-page--get-quote-button">
                     Get A Quote
                 </button>
-                {/* <div className="info-box--container-2">
-                    <div className="info-box--4">
-                        <h5 className="info-box--header">Tools?</h5>
-                        <p className="info-box--p">
-                            Expertise across the whole stack: from languages and
-                            compilers to smart contract systems, protocols, and
-                            applications.
-                        </p>
-                    </div>
-                    <div className="info-box--5">
-                        <h5 className="info-box--header">Ready?</h5>
-                        <p className="info-box--p">
-                            The best outcomes, and most interesting findings
-                            happen when the code has been tested and documented
-                            and is ready for deployment.
-                        </p>
-                    </div>
-                    <div className="info-box--6">
-                        <h5 className="info-box--header">Cost?</h5>
-                        <p className="info-box--p">
-                            Can vary greatly based upon the length and
-                            complexity of the smart contracts to be audited.
-                        </p>
-                    </div>
-                </div> */}
             </section>
         </>
     )
