@@ -8,7 +8,7 @@ const AuditItem = ({ name, year }) => (
                 <img src={download} alt="download" />
             </div>
             <p className="audits--pdf">PDF</p>
-            <p>{year}</p>
+            <p className="audits--year">{year}</p>
         </div>
     </div>
 )

@@ -36,8 +36,18 @@
     padding: 0;
     box-sizing: border-box;
     tab-size: 4;
-    --primary-color: #6158ff;
-    --secondary-color: #4abdfd;
+    --primary-color: #22252d;
+    --secondary-color: #5f5b63;
+    --light-secondary-color: #818181;
+    --lightest-secondary-color: #bfbfbf;
+    --max-secondary-color: #e4e4e4;
+    --lighter-black: #202228;
+    --bg-black: #1d2026;
+    --accent-color1: #0bad8f;
+    --accent-color2: #f62c69;
+    --accent-color3: #d7ae72;
+    --accent-color4: #ea5641;
+    --accent-color5: #f09325;
 }
 
 :root {
