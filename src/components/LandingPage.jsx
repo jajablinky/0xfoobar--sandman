@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import foostudio from '../images/foostudio_logo.png'
 
 const LandingPage = () => {
+const quote = "Think of us as the sandman - you can sleep at night tucked in as your project is secured"
 
 
     return (
@@ -14,7 +15,7 @@ const LandingPage = () => {
                             src={foostudio}
                             alt={'foostudios'}
                         />
-                        <p>Think of us as the sandman - you can sleep at night tucked in as your project is secured</p>
+                        <p className='quote'>{quote}</p>
                 </div>
             </section>
         </>

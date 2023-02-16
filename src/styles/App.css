@@ -55,8 +55,7 @@ ul {
 }
 
 .foostudio {
-    width: 200px;
-    height: fit-content;
+  width: 20%;
 }
 
 h1 {
@@ -78,6 +77,24 @@ h2 {
 }
 
 .landing-page--content {
-    text-align: center;
-    margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  text-align: center;
 }
+
+
+/* animation for storybook text */
+.quote {
+    animation: fadeIn 8s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
