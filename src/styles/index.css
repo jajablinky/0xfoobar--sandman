@@ -1,11 +1,4 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto-Medium.ttf) format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Share';
     src: url(../fonts/Share-Bold.ttf) format('truetype'),
         url(../fonts/Share-Regular.ttf) format('truetype');
@@ -13,18 +6,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Trap';
-    src: url(../fonts/Trap-Black.otf) format('opentype'),
-        url(../fonts/Trap-Bold.otf) format('opentype'),
-        url(../fonts/Trap-ExtraBold.otf) format('opentype'),
-        url(../fonts/Trap-Light.otf) format('opentype'),
-        url(../fonts/Trap-Medium.otf) format('opentype'),
-        url(../fonts/Trap-Regular.otf) format('opentype'),
-        url(../fonts/Trap-SemiBold.otf) format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
     font-family: 'Spline-Sans-Mono';
     src: url(../fonts/SplineSansMono-VariableFont_wght.ttf) format('truetype');
@@ -36,22 +17,19 @@
     padding: 0;
     box-sizing: border-box;
     tab-size: 4;
-    --primary-color: #22252d;
-    --secondary-color: #5f5b63;
+
+    --primary-color: #EEEEEE;
+    --secondary-color: #FAFAFA;
     --light-secondary-color: #818181;
     --lightest-secondary-color: #bfbfbf;
     --max-secondary-color: #e4e4e4;
     --lighter-black: #202228;
-    --bg-black: #1d2026;
-    --accent-color1: #0bad8f;
-    --accent-color2: #f62c69;
-    --accent-color3: #d7ae72;
-    --accent-color4: #ea5641;
-    --accent-color5: #f09325;
+    --bg-black: #1D2026;
+    --accent-color1: #F8E066;
 }
 
 :root {
-    font-family: 'Roboto', 'Share', 'Spline-Sans-Mono', 'Trap', Arial, Helvetica,
+    font-family: 'Share', 'Spline-Sans-Mono', sans-serif, Helvetica,
         sans-serif;
     font-size: 16px;
     line-height: 24px;
