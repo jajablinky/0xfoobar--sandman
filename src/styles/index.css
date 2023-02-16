@@ -19,6 +19,7 @@
     tab-size: 4;
 
     --primary-color: #EEEEEE;
+    --primary-color-low-opacity: #EEEEEE33;
     --secondary-color: #FAFAFA;
     --light-secondary-color: #818181;
     --lightest-secondary-color: #bfbfbf;

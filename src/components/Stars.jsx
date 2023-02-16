@@ -1,5 +1,5 @@
 const Stars = () => {
-    const count = 20; 
+    const count = 10; 
     const location = document.querySelector('.landing-page--full-container');
     let i = 0;
 
