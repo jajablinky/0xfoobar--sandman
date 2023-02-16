@@ -36,11 +36,7 @@ const Nav = () => {
             <div className="header--sub-container">
                 <div className="header--content-container">
                     <div className="header--content-left">
-                        <img
-                            className={'foobar'}
-                            src={foostudio}
-                            alt={'foostudios'}
-                        />
+                        
                     </div>
                 </div>
             </div>

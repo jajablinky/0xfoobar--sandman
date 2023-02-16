@@ -61,6 +61,7 @@ ul {
 
 h1 {
     color: var(--primary-color);
+
 }
 
 h2 {
@@ -73,5 +74,10 @@ h2 {
     display: flex;
     flex-direction: column;
     max-width: 1600px;
+    margin: auto;
+}
+
+.landing-page--content {
+    text-align: center;
     margin: auto;
 }

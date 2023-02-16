@@ -29,8 +29,9 @@
 }
 
 :root {
-    font-family: 'Share', 'Spline-Sans-Mono', sans-serif, Helvetica,
+    font-family: 'Spline-Sans-Mono', sans-serif, Helvetica,
         sans-serif;
+    color: var(--primary-color);
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;

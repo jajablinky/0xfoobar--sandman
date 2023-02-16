@@ -8,12 +8,9 @@ import BlurBottom from './components/BlurBottom'
 function App() {
     return (
         <div className="full--container">
-            <Nav />
             <main>
                 <LandingPage />
-
             </main>
-            <BlurBottom />
         </div>
     )
 }
