@@ -4,7 +4,9 @@ import foostudio from '../images/foostudio_logo.png'
 import Stars from './Stars'
 
 const LandingPage = () => {
-const quote = "Think of us as the sandman - you can sleep at night tucked in as your project is secured"
+const quote1 = "Think of us as the sandman"
+const quote2 = "you can sleep at night tucked in"
+const quote3 = "as your project is secured."
 
 useEffect(() => {
     Stars()
@@ -19,7 +21,9 @@ useEffect(() => {
                             src={foostudio}
                             alt={'foostudios'}
                         />
-                        <p>{quote}</p>
+                        <p>{quote1}</p>
+                        <p>{quote2}</p>
+                        <p>{quote3}</p>
                 </div>
             </section>
         </>
