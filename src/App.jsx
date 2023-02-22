@@ -6,8 +6,9 @@ import LandingPage from './components/LandingPage'
 import BlurBottom from './components/BlurBottom'
 
 function App() {
+
     return (
-        <div className="full--container">
+        <div className="full--container" >
             <main>
                 <LandingPage />
             </main>
