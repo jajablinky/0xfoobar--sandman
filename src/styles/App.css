@@ -67,10 +67,11 @@ ul {
 }
 
 .button-container {
+    position: relative; /* Make the container position-relative */
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .button-filled {
@@ -86,6 +87,7 @@ ul {
 }
 
 .button-outline {
+    position: relative;
     border: 3px solid var(--primary-color);
     background-color: transparent;
     color: var(--primary-color);
@@ -98,6 +100,18 @@ ul {
     color: var(--bg-black);
 }
 
+.star {
+    position: absolute;
+    top: -8px;
+    left: 95px;
+    z-index: 100;
+    transition: transform 0.5s ease;
+}
+
+.star:hover {
+    transform: rotate(360deg); /* added to rotate the star on hover */
+}
+
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 48px;
@@ -107,6 +121,7 @@ h1 {
         0 0 40px var(--primary-color-lowest-opacity),
         0 0 80px var(--primary-color-lowest-opacity);
     margin: 0;
+    white-space: nowrap;
 }
 
 h2 {
@@ -132,7 +147,56 @@ p {
 }
 
 .landing-page--content {
-    margin-top: 15%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.moon-blur {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.foo-studio {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+}
+
+.left-side-logos-a {
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: -28%;
+    animation: moveUpAndDown 40s ease-in-out infinite;
+}
+
+.left-side-logos-b {
+    position: absolute;
+    z-index: -200;
+    top: -15%;
+    left: -25%;
+    animation: moveUpAndDown 20s ease-in-out infinite;
+    animation: shrink 20s ease-in-out infinite;
+}
+
+.right-side-logos-a {
+    position: absolute;
+    z-index: -100;
+    top: -20%;
+    right: -23%;
+    animation: moveUpAndDown 40s ease-in-out infinite;
+}
+
+.right-side-logos-b {
+    position: absolute;
+    z-index: -120;
+    top: -20%;
+    right: -23%;
+    animation: moveUpAndDown 10s ease-in-out infinite;
+    animation: shrink 10s ease-in-out infinite;
 }
 
 /* stars */
@@ -146,6 +210,31 @@ i {
 }
 
 /* animation */
+
+@keyframes moveUpAndDown {
+    0% {
+        transform: translateY(0); /* starting position */
+    }
+    50% {
+        transform: translateY(-30px); /* move up */
+    }
+    100% {
+        transform: translateY(0); /* move back down */
+    }
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.6);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 @keyframes twinkle {
     0% {
         opacity: 0;

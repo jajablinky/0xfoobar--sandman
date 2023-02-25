@@ -2,8 +2,7 @@ import React, { useRef, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
-import foobar from '../images/foobar.png'
-import foostudio from '../images/foostudio_logo.png'
+
 
 const Nav = () => {
     const headerRef = useRef(null)
