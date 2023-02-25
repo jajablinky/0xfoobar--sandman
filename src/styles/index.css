@@ -10,22 +10,22 @@
     box-sizing: border-box;
     tab-size: 4;
 
-    --primary-color: #EEEEEE;
-    --primary-color-low-opacity: #EEEEEE33;
-    --secondary-color: #FAFAFA;
+    --primary-color: #eeeeee;
+    --primary-color-low-opacity: #eeeeee33;
+    --primary-color-lowest-opacity: #eeeeee15;
+    --secondary-color: #fafafa;
     --light-secondary-color: #818181;
     --lightest-secondary-color: #bfbfbf;
     --max-secondary-color: #e4e4e4;
     --lighter-black: #202228;
-    --bg-black: #1D2026;
-    --accent-color1: #F8E066;
+    --bg-black: #1d2026;
+    --accent-color1: #f8e066;
 }
 
 :root {
     font-family: 'Spline-Sans-Mono', sans-serif, Helvetica;
     color: var(--primary-color);
     font-size: 16px;
-    line-height: 24px;
     font-weight: 400;
     font-synthesis: none;
     text-rendering: optimizeLegibility;

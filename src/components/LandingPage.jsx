@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 
+import moon from '../images/moon.svg'
+import twitterIcon from '../images/twittericon.svg'
 import foostudio from '../images/foostudio_logo.png'
+
 import Stars from './Stars'
 
 const LandingPage = () => {
@@ -12,22 +15,18 @@ useEffect(() => {
     Stars()
 }, [])
 
-
-
     return (
         <>
             <section className="landing-page--full-container" >
                 <div className='landing-page--content fade-in'>
-                        <img
-                            className={'foostudio'}
-                            src={foostudio}
-                            alt={'foostudios'}
-                        />
+                        <h1>Smart Contract audits for</h1>
+                        <h1>NFTs and DeFi, by foobar </h1>
                         <p>{quote1}{quote2}</p>
                         <p>{quote3}</p>
                 </div>
                 <div className='button-container fade-in'>
-                <button className='button-outline'>contact</button>
+                <button className='button-outline'>Contact</button>
+                <button className='button-filled'><img src={twitterIcon} alt='twitter-svg'/></button>
                 </div>
             </section>
         </>

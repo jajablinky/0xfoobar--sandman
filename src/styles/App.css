@@ -69,24 +69,44 @@ ul {
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     margin-top: 10px;
 }
 
 .button-filled {
+    border: 3px solid transparent;
+    color: var(--bg-black);
+    transition: all 0.5s ease;
+}
+
+.button-filled:hover {
     border: 3px solid transparent;
     background-color: var(--accent-color1);
     color: var(--bg-black);
 }
 
 .button-outline {
-    border: 3px solid var(--accent-color1);
+    border: 3px solid var(--primary-color);
     background-color: transparent;
     color: var(--primary-color);
+    transition: all 0.5s ease;
+}
+
+.button-outline:hover {
+    border: 3px solid transparent;
+    background-color: var(--accent-color1);
+    color: var(--bg-black);
 }
 
 h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
     color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color-lowest-opacity),
+        0 0 20px var(--primary-color-lowest-opacity),
+        0 0 40px var(--primary-color-lowest-opacity),
+        0 0 80px var(--primary-color-lowest-opacity);
+    margin: 0;
 }
 
 h2 {
@@ -95,6 +115,8 @@ h2 {
 }
 
 p {
+    color: var(--secondary-color);
+    opacity: 75%;
     text-shadow: 0 0 10px var(--primary-color-low-opacity),
         0 0 20px var(--primary-color-low-opacity),
         0 0 40px var(--primary-color-low-opacity),
@@ -110,7 +132,7 @@ p {
 }
 
 .landing-page--content {
-    margin-top: 30%;
+    margin-top: 15%;
 }
 
 /* stars */
