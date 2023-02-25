@@ -7,9 +7,9 @@ button {
 button {
     border: 0;
     padding: 1em;
-    border-radius: 25px;
-    width: 200px;
-    font-family: sans-serif;
+    border-radius: 10px;
+    width: 290px;
+
     text-transform: uppercase;
 }
 
@@ -62,16 +62,12 @@ ul {
     flex-direction: row;
 }
 
-.foostudio {
-    width: 150px;
-}
-
 .button-container {
     position: relative; /* Make the container position-relative */
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
+    gap: 25px;
+    margin-top: 30px;
 }
 
 .button-filled {
@@ -100,16 +96,16 @@ ul {
     color: var(--bg-black);
 }
 
-.star {
+.contact-star {
     position: absolute;
-    top: -8px;
-    left: 95px;
+    top: -12px;
+    left: 5px;
     z-index: 100;
     transition: transform 0.5s ease;
 }
 
 .star:hover {
-    transform: rotate(360deg); /* added to rotate the star on hover */
+    transform: rotate(360deg) scale(1.15); /* added to rotate the star on hover */
 }
 
 h1 {
@@ -126,10 +122,12 @@ h1 {
 
 h2 {
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
     color: var(--secondary-color);
 }
 
 p {
+    font-family: 'Open Sans', sans-serif;
     color: var(--secondary-color);
     opacity: 75%;
     text-shadow: 0 0 10px var(--primary-color-low-opacity),
@@ -162,14 +160,19 @@ p {
 .foo-studio {
     position: absolute;
     top: 70px;
-    left: 100px;
+    left: 70px;
+    width: 150px;
+}
+
+.floating-logos {
+    opacity: 30%;
 }
 
 .left-side-logos-a {
     position: absolute;
     z-index: -100;
     top: 0;
-    left: -28%;
+    left: -35%;
     animation: moveUpAndDown 40s ease-in-out infinite;
 }
 
@@ -177,7 +180,7 @@ p {
     position: absolute;
     z-index: -200;
     top: -15%;
-    left: -25%;
+    left: -35%;
     animation: moveUpAndDown 20s ease-in-out infinite;
     animation: shrink 20s ease-in-out infinite;
 }
@@ -186,7 +189,7 @@ p {
     position: absolute;
     z-index: -100;
     top: -20%;
-    right: -23%;
+    right: -30%;
     animation: moveUpAndDown 40s ease-in-out infinite;
 }
 
@@ -194,7 +197,7 @@ p {
     position: absolute;
     z-index: -120;
     top: -20%;
-    right: -23%;
+    right: -30%;
     animation: moveUpAndDown 10s ease-in-out infinite;
     animation: shrink 10s ease-in-out infinite;
 }
@@ -213,13 +216,16 @@ i {
 
 @keyframes moveUpAndDown {
     0% {
-        transform: translateY(0); /* starting position */
+        transform: translateY(0);
+        opacity: 30%;
     }
     50% {
-        transform: translateY(-30px); /* move up */
+        transform: translateY(-30px);
+        opacity: 15%;
     }
     100% {
-        transform: translateY(0); /* move back down */
+        transform: translateY(0);
+        opacity: 30%;
     }
 }
 

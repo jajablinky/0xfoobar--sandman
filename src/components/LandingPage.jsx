@@ -59,13 +59,17 @@ const LandingPage = () => {
                                 alt="right-side-logos-b"
                             />
                         </div>
-                        <div className="button-container fade-in">
-                            <img className="star" src={star} alt="star" />
-                            <button className="button-outline">Contact</button>
-                            <button className="button-filled">
-                                <img src={twitterIcon} alt="twitter-svg" />
-                            </button>
-                        </div>
+                    </div>
+                    <div className="button-container fade-in">
+                        <img
+                            className="contact-star star"
+                            src={star}
+                            alt="star"
+                        />
+                        <button className="button-outline">Contact</button>
+                        <button className="button-filled">
+                            <img src={twitterIcon} alt="twitter-svg" />
+                        </button>
                     </div>
                 </div>
             </section>
