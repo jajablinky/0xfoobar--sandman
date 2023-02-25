@@ -66,6 +66,7 @@ const LandingPage = () => {
                             src={star}
                             alt="star"
                         />
+                        <img className="star1 star" src={star} alt="star1" />
                         <button className="button-outline">Contact</button>
                         <button className="button-filled">
                             <img src={twitterIcon} alt="twitter-svg" />
